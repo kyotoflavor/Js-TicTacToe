@@ -40,11 +40,15 @@ td
      overflow: auto;
      margin: auto;
 }
-
-.joueur1{
+.vide{
 
 }
 
-.joueur2{
 
+.joueur1{
+	background-color: red;
+}
+
+.joueur2{
+	background-color: yellow;
 }
