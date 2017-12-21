@@ -3,12 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <link rel="stylesheet" href="css/tictactoe.css">
-<script src="js/tictactoe.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <title> Tic Tac Toeeeeeee !</title>
 </head>
-<body>
+<body onload="Initialisation();">
   <div class="title">
     <p>WELCOME TO THE TIC TAC TOE!</p>
   </div>
@@ -19,25 +18,24 @@
         <center>
           <table>
                 <tbody>
-                 <tr>
-                 <td id="case" onclick="joueur1() ; joueur2();"></td>
-                 <td id="case" onclick="joueur1() ; joueur2();"></td>
-                 <td id="case" onclick="jou1jou2();"></td>
-                 </tr>
-                 <tr>
-                 <td id="cellule" onclick="jou1jou2()"></td>
-                 <td id="cellule" onclick="jou1jou2()"></td>
-                 <td id="cellule" onclick="jou1jou2()"></td>
-                 </tr>
-                 <tr>
-                 <td id="cellule" onclick="jou1jou2()"></td>
-                 <td id="cellule" onclick="jou1jou2()"></td>
-                 <td id="cellule" onclick="jou1jou2()"></td>
-                 </tr>
+                  <tr>
+            <td class="carre" id="Zonea1" onclick="jouer('Zonea1');"></td>
+            <td class="carre" id="Zonea2" onclick="jouer('Zonea2');"></td>
+            <td class="carre" id="Zonea3" onclick="jouer('Zonea3');"></td>
+        </tr>
+        <tr>
+            <td class="carre" id="Zoneb1" onclick="jouer('Zoneb1');"></td>
+            <td class="carre" id="Zoneb2" onclick="jouer('Zoneb2');"></td>
+            <td class="carre" id="Zoneb3" onclick="jouer('Zoneb3');"></td>
+        </tr>
+        <tr>
+            <td class="carre" id="Zonec1" onclick="jouer('Zonec1');"></td>
+            <td class="carre" id="Zonec2" onclick="jouer('Zonec2');"></td>
+            <td class="carre" id="Zonec3" onclick="jouer('Zonec3');"></td>
+</tr>
                  </tbody>
               </table></center>
-
 </div>
-
+<script src="js/tictactoe.js"></script>
 </body>
 </html>
