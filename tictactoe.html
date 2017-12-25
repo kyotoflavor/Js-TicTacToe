@@ -7,11 +7,15 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <title> Tic Tac Toeeeeeee !</title>
 </head>
-<body>
-  <div class="title">
-    <p>WELCOME TO THE TIC TAC TOE!</p>
+<body onload="checkWin()">
+<br><br><br><br><br><br><br><br><br><br>
+  <center>
+    <div class="title">
+    WELCOME TO THE TIC TAC TOE!
   </div>
+</center>
 
+<br><br><br>
 <!-- main body-->
 <div class="Jeu">
 
@@ -19,24 +23,27 @@
             <table>
               <tbody>
                <tr>
+               <td  id="case0" onclick='joueur(this);'></td>
                <td  id="case1" onclick='joueur(this);'></td>
                <td  id="case2" onclick='joueur(this);'></td>
-               <td  id="case3" onclick='joueur(this);'></td>
+               <td  id="histo1" class="historique"> historique player 1 </td>
                </tr>
                <tr>
+               <td  id="case3" onclick='joueur(this);'></td>
                <td  id="case4" onclick='joueur(this);'></td>
                <td  id="case5" onclick='joueur(this);'></td>
-               <td  id="case6" onclick='joueur(this);'></td>
                </tr>
                <tr>
+               <td  id="case6" onclick='joueur(this);'></td>
                <td  id="case7" onclick='joueur(this);'></td>
                <td  id="case8" onclick='joueur(this);'></td>
-               <td  id="case9" onclick='joueur(this);'></td>
+               <td  id="histo2" class="historique"> historique player 2 </td>
                </tr>
                </tbody>
             </table>
         </center>
 </div>
+
 
 </body>
 </html>
