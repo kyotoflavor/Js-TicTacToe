@@ -116,7 +116,7 @@ function disp_win_p1() {
   function disp_win_p2() {
     if (victoire=true){
         document.getElementById("win_div").style.visibility = "visible";
-        document.getElementById("win_div").innerHTML = '<br>Le joueur 1 a gagné! <br><img style="height: auto; width: auto;" src="css/i-win-you-lose.png"/> <br> <button onclick="fermer()">FERMER</button>';
+        document.getElementById("win_div").innerHTML = '<br>Le joueur 2 a gagné! <br><img style="height: auto; width: auto;" src="css/i-win-you-lose.png"/> <br> <button onclick="fermer()">FERMER</button>';
     }   
   }
 
