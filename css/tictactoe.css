@@ -24,16 +24,6 @@ td
      border-radius: 25px;
 }
 
-#histo1, #histo2{
-     width: 350px;
-     height: auto;
-     text-align: center;
-     font-weight: bold;
-     border: 4px solid black;
-     background-color: #fff;/*hsla(0, 0%, 97%, 0.4);*/
-     border-radius: 25px;
-}
-
 
 .title{
     width: 40%;
@@ -58,15 +48,39 @@ td
      margin: auto;
 }
 
-.vide{
-
-}
-
-
 .joueur1{
 	background-color: red;
 }
 
 .joueur2{
 	background-color: yellow;
+}
+
+#win_div {
+  top: 20%;
+  left: 28%;
+  margin: auto;
+  height: 700px;
+  width: 850px;
+  z-index: 1050;
+  position: absolute;
+  border: 4px solid #565656;
+  background-color: grey; /*hsla(0, 0%, 70%, 0.4);*/
+  border-radius: 25px;
+  visibility: hidden;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+ 
+}
+
+
+#histo1, #histo2{
+     width: 350px;
+     height: auto;
+     text-align: center;
+     font-weight: bold;
+     border: 4px solid black;
+     background-color: #fff;/*hsla(0, 0%, 97%, 0.4);*/
+     border-radius: 25px;
 }
