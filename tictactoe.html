@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="css/tictactoe.css">
 <script src="js/tictactoe.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <title> Tic Tac Toeeeeeee !</title>
 </head>
-<body onload="test()">
-  <div class="title">
+<body  onload="checkWin()";>
+
+<div id="win_div" onload="disp_win();"></div>
+
+<br><br><br><br><br><br><br><br><br><br>
+  <center>
+    <div class="title">
     <p>WELCOME TO THE TIC TAC TOE!</p>
   </div>
+</center>
 
+<br><br><br>
+
+
+<!---->
+<center>
+<table>
+  <tbody>
+    <tr>
+      <td style="border-radius: 0px;background-color: red; width: 100px; height: 75px; text-align: center;"> JOUEUR 1</td>
+      <td style="border-radius: 0px;background-color: yellow; width: 100px; height: 75px; text-align: center;"> JOUEUR 2</td>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+<br>
 <!-- main body-->
-<div class="Jeu">
+<div class="Jeu" >
 
         <center>
             <table>
-              <tbody>
+              <tbody
                <tr>
-               <td onclick='joueur(this);'></td>
-               <td onclick='joueur(this);'></td>
-               <td onclick='joueur(this);'></td>
+               <td  id="case0" onclick='joueur(this);'></td>
+               <td  id="case1" onclick='joueur(this);'></td>
+               <td  id="case2" onclick='joueur(this);'></td>
+               <td  id="histo1" class="historique"> historique player 1 :</td>
                </tr>
                <tr>
-               <td onclick='joueur(this);'></td>
-               <td onclick='joueur(this);'></td>
-               <td onclick='joueur(this);'></td>
+               <td  id="case3" onclick='joueur(this);'></td>
+               <td  id="case4" onclick='joueur(this);'></td>
+               <td  id="case5" onclick='joueur(this);'></td>
                </tr>
                <tr>
-               <td  onclick='joueur(this);'></td>
-               <td  onclick='joueur(this);'></td>
-               <td  onclick='joueur(this);'></td>
+               <td  id="case6" onclick='joueur(this);'></td>
+               <td  id="case7" onclick='joueur(this);'></td>
+               <td  id="case8" onclick='joueur(this);'></td>
+               <td  id="histo2" class="historique"> historique player 2 :</td>
                </tr>
                </tbody>
             </table>
         </center>
 </div>
+
+
+
+
 
 </body>
 </html>
